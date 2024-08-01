@@ -9,10 +9,8 @@ class Home extends Component {
     error: '',
     redirectToProperties: false,
     users: [
-      { email: 'user1@gmail.com', password: 'abc@321' },
-      { email: 'user2@gmail.com', password: 'xyz@123' },
-      { email: 'user3@gmail.com', password: 'alliswell@888' }
-    ]
+      { email: 'user@abc.com', password: 'user@abc' },
+      ]
   };
 
   handleChange = (event) => {
@@ -65,7 +63,12 @@ class Home extends Component {
           <button type="submit">Login</button>
           {this.state.error && <p className="error-message">{this.state.error}</p>}
         </form>
-        
+        <div className="demo-credentials">
+          <h2>Demo Credentials:</h2>
+          <ul>
+            <li>Email: user@abc.com, Password: user@abc</li>
+          </ul>
+        </div>
       </div>
     );
   }
