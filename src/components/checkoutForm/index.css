@@ -1,0 +1,89 @@
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #102353; }
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0d1a47; }
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #2a3071; }
+
+
+
+.checkout-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f0f7;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkout-form input,
+.checkout-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.checkout-form button {
+  padding: 10px 20px;
+  background-color: #ff3300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.checkout-form button:hover {
+  background-color: #b31500;
+}
+
+.logout-button {
+  background-color: #d4ff00;
+}
+
+.logout-button:hover {
+  background-color: #d4ff00;
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 5px;
+}
+
+.heading{
+  color:#4d0847;
+  font-size:50px;
+  font-family: "Roboto";
+
+}
+
+
+.para {
+  color:#4d0847;
+  font-size:20px;
+  font-family: "Roboto";
+  font-weight:bold;
+}
+
+
+.paragraph{
+  color:#4d0847;
+  font-size:25px;
+  font-family: "Roboto";
+  font-weight:bold;
+}

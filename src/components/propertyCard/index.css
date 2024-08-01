@@ -1,0 +1,86 @@
+.properties-page {
+    padding: 20px;
+  }
+  
+  .properties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+  }
+  
+  .logout-button {
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .load-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+ 
+  .property-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(17, 3, 3, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+    min-height: 450px; 
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .property-details {
+    padding: 10px;
+  }
+  
+  .property-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .property-description,
+  .property-location,
+  .property-bedrooms,
+  .property-price,
+  .property-amenities {
+    margin: 5px 0;
+  }
+  
+  .property-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-now-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #100c0c;
+    background-color: hsl(200, 39%, 49%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-now-button:hover {
+    background-color: #5145a0;
+  }
+  

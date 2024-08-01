@@ -1,0 +1,19 @@
+.cart-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.cart-button-link button {
+  padding: 10px 20px;
+  background-color: #e600ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-button-link button:hover {
+  background-color: #e600ff
+}
