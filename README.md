@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Property Rental Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  The Property Rental Platform is a modern web application built with React, designed to mimic a property rental service. The application showcases a variety of rental properties, allows users to view details, and facilitates the booking process. It features responsive design to ensure a seamless experience across different devices.
 
-## Available Scripts
+## Features
+ - Property Listings: Browse a wide range of rental properties with detailed information including images, descriptions, location, price, and other criteria.
+ - Property Details: View comprehensive details about each property, including amenities and availability.
+ - Booking Management: Select and book properties through a straightforward process.
+ - Responsive Design: Optimized for different screen sizes and devices.
+ - User Authentication (Optional): Users can sign up, log in, and manage their profiles (if implemented).
 
-In the project directory, you can run:
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js v22.5.1
+- npm or yarn
+- MariaDB or your preferred SQL database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend Setup
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/sairamdasari7/totality-frontend-challenge.git
+    cd rental-app
+    ```
 
-### `npm test`
+2. Install backend dependencies:
+    ```sh
+    cd backend
+    npm install
+    # or
+    yarn install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Configure the database:
+    - Create a `.env` file in the `backend` directory and add your database credentials:
+      ```env
+      DB_HOST=your_database_host
+      DB_USER=your_database_user
+      DB_PASS=your_database_password
+      DB_NAME=your_database_name
+      ```
 
-### `npm run build`
+4. Run database migrations:
+    ```sh
+    npx sequelize-cli db:migrate
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Start the backend server:
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend Setup
+1. Navigate to the frontend directory:
+    ```sh
+    cd ../frontend
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install frontend dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-### `npm run eject`
+3. Start the frontend development server:
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
+1. Open your browser and navigate to `https://homeforrent.netlify.app/`.
+2. Register a new account or log in with an existing account.
+3. Browse property listings, manage bookings, and complete the checkout process.
+4. Optional: Add properties to your favorites list and leave reviews for properties.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
+- Property Listings: View detailed information about available properties.
+- Booking Management: Book properties and manage your bookings.
+- Checkout Process: Complete the checkout process for your bookings.
+- User Authentication: Register and log in to access platform features.
+- Property Reviews: Leave and view reviews for properties.
+- Favorites List: Add properties to your favorites list for easy access.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
+Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a pull request
 
-## Learn More
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
